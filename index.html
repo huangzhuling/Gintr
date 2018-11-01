@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-
+    <link rel="stylesheet" href="File/css/index.css">
 </head>
-<link rel="stylesheet" href="File/css/index.css">
+
 <body>
     <!--头部搜索-->
     <header class="hm_header header">
@@ -22,23 +23,136 @@
         </div>
     </header>
     <!-- 轮播图 -->
-    <div class="hm_banner">
+    
+      <div class="slider"> 
+        <div id="images">
+            <a href="#" class="displayImg"><img src="File/images/001.png" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="File/images/002.png" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="File/images/003.png" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="File/images/004.png" alt=""></a>
+            <a href="#" class="hiddenImg"><img src="File/images/005.png" alt=""></a>
+            
+        </div>
+        <ul class="txt-top">
+            <li class="txtItem normalColor" >
+                <p>12</p>
+                <p>12</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>12</p>
+                <p>12</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>12</p>
+                <p>12</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>12</p>
+                <p>12</p>
+            </li>
+            <li class="txtItem normalColor">
+                <p>12</p>
+                <p>12</p>
+            </li>
+        </ul>
+    </div> 
+    <script src="File/js/index.js"></script>
+    <!--导航栏-->
+    <nav class=hm_nav>
         <ul class="clearfix">
-            <li><a href="#"><img src="File/images/001.png" alt=""></a></li>
-            <li><a href="#"><img src="File/images/002.png" alt=""></a></li>
-            <li><a href="#"><img src="File/images/003.png" alt=""></a></li>
-            <li><a href="#"><img src="File/images/004.png" alt=""></a></li>
-            <li><a href="#"><img src="File/images/005.png" alt=""></a></li>
+            <li>
+                <a href="#">
+                    <img src="File/images/nva1.png" alt="">
+                    <p>分类查询</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="File/images/nav2.png" alt="">
+                    <p>黑马超市</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="File/images/nva3.png" alt="">
+                    <p>购物车</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="File/images/nva4.png" alt="">
+                    <p>个人中心</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="File/images/nva5.png" alt="">
+                     <p>充值中心</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="File/images/nva6.png" alt="">
+                    <p>黑马理财</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="File/images/nva7.png" alt="">
+                    <p>黑马培训</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="File/images/nva8.png" alt="">
+                    <p>黑马圈子</p>
+                </a>
+            </li>
         </ul>
-        <ul>
-            <li class="now"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+    </nav>
+    <!--商品-->
+    <main class="hm_product">
+        <!--商品盒子-->
+        <section class="product_box hm_sk">
+            <!--头部-->
+            <div class="product_box_tit no_border">
+                <div class="f_left m_110">
+                    <span class="sk_icon"></span>
+                    <span class="sk_name m_110">掌上秒杀</span>
+                    <div class="sk_time m_110">
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>:</span>
+                        <span>0</span>
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="f_right m_r10"><a href="#">更多</a></div>
+            </div>
+            <!--内容-->
+            <div class="product_box_con">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#"><img src="File/images/detail01.jpg" alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="File/images/detail02.jpg" alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="File/images/detail03.jpg" alt=""></a>
+                        <p>&yen;10.00</p>
+                        <p>&yen;100.00</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
